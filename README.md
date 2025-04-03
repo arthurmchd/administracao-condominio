@@ -3,4 +3,4 @@
 
 Participantes
 
-Arthur Lucas e Guilherme FRANZOI
+Arthur Machado e Guilherme Franzoi
