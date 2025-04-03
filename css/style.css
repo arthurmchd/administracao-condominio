@@ -1,0 +1,211 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1b8feeb2 0%, #000000 100%);
+  padding: 2rem 1rem;
+}
+
+.contentor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secao-formulario {
+  background: #fcfcfc;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.grupo-campo {
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.linha-campos {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.40rem;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2d79eb;
+}
+
+.botao-enviar {
+  background-color: #000000;
+  color: white;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.botao-enviar:hover {
+  background-color: #2d79eb;
+}
+
+.secao-grade {
+  background: #fcfcfc;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grade-moradores,
+.grade-veiculos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cartao-morador,
+.cartao-veiculo {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.status,
+.email,
+.telefone,
+.apartamento,
+.bloco,
+.dono,
+.box,
+.cor,
+.modelo,
+.placa{
+  margin: 8px;
+}
+.cartao-morador img,
+.cartao-veiculo img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.cartao-morador .nome,
+.cartao-veiculo .placa {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.cartao-morador .bloco,
+.cartao-morador .apartamento,
+.cartao-veiculo .modelo,
+.cartao-veiculo .cor {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: #000000;
+}
+
+.botao-excluir {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  width: calc(100% - 2rem);
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.botao-excluir:hover {
+  background-color: #c0392b;
+}
+
+.botao-editar {
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  width: calc(100% - 2rem);
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.botao-editar:hover {
+  background-color: #2980b9;
+}
+
+.botao-cancelar {
+  background-color: #e67e22;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.botao-cancelar:hover {
+  background-color: #d35400;
+}
+
+.cartao-morador,
+.cartao-veiculo {
+  padding-bottom: 5rem;
+}

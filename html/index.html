@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="contentor">
+        <section class="secao-formulario">
+            <h2>Cadastro de Morador</h2>
+            <form id="formularioMorador">
+                <input type="hidden" id="moradorId" name="moradorId" value="">
+                <div class="grupo-campo">
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                </div>
+                <div class="linha-campos">
+                    <div class="grupo-campo"><label for="bloco">Bloco:</label><input type="text" id="bloco" name="bloco"
+                            required></div>
+                    <div class="grupo-campo"><label for="apartamento">Apartamento:</label><input type="text"
+                            id="apartamento" name="apartamento" required></div>
+                </div>
+                <div class="linha-campos">
+                    <div class="grupo-campo"><label for="telefone">Telefone:</label><input type="tel" id="telefone"
+                            name="telefone" required></div>
+                    <div class="grupo-campo"><label for="email">E-mail:</label><input type="email" id="email"
+                            name="email" required></div>
+                </div>
+                <div class="grupo-campo">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="residente">Residente</option>
+                        <option value="proprietario">Proprietário</option>
+                        <option value="visitante">Visitante</option>
+                    </select>
+                </div>
+                <button type="submit" class="botao-enviar" id="botaoMorador">Cadastrar Morador</button>
+                <button type="button" class="botao-cancelar" id="cancelarEdicaoMorador" style="display:none;">Cancelar
+                    Edição</button>
+            </form>
+        </section>
+        <section class="secao-formulario">
+            <h2>Cadastro de Veículo</h2>
+            <form id="formularioVeiculo">
+                <input type="hidden" id="veiculoId" name="veiculoId" value="">
+                <div class="grupo-campo"><label for="placa">Placa:</label><input type="text" id="placa" name="placa"
+                        required></div>
+                <div class="linha-campos">
+                    <div class="grupo-campo"><label for="modelo">Modelo:</label><input type="text" id="modelo"
+                            name="modelo" required></div>
+                    <div class="grupo-campo"><label for="cor">Cor:</label><input type="text" id="cor" name="cor"
+                            required></div>
+                </div>
+                <div class="linha-campos">
+                    <div class="grupo-campo">
+                        <label for="morador">Morador Associado:</label>
+                        <select id="morador" name="morador" required>
+                            <option value="">Selecione um morador</option>
+                        </select>
+                    </div>
+                    <div class="grupo-campo"><label for="numeroVaga">Número da Vaga:</label><input type="text"
+                            id="numeroVaga" name="numeroVaga" required></div>
+                </div>
+                <button type="submit" class="botao-enviar" id="botaoVeiculo">Cadastrar Veículo</button>
+                <button type="button" class="botao-cancelar" id="cancelarEdicaoVeiculo" style="display:none;">Cancelar
+                    Edição</button>
+            </form>
+        </section>
+        <section class="secao-grade">
+            <h2>Moradores Cadastrados</h2>
+            <div id="gradeMoradores" class="grade-moradores"></div>
+        </section>
+        <section class="secao-grade">
+            <h2>Veículos Cadastrados</h2>
+            <div id="gradeVeiculos" class="grade-veiculos"></div>
+        </section>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
